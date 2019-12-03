@@ -4,7 +4,7 @@ This project is my exploration on the feasibility of printing content from a JSO
 This page uses a sample file from Singapore Government Technologies' "My Careers Future" Content page and will work with any page of `https://content.mycareersfuture.sg/wp-json/wp/v2/posts/[POST NUMBER]` where **[POST NUMBER]** is the id number of the post available on the site. 
 
 ## Pre-Conditions to run
-Current build is not cross-origin compatible. Testing is done on Chrome using a [Cross-Origin Resource Sharing Extension](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en-US) to make it possible for the browser to obtain content from a site that is not from the same source. 
+Current build is not cross-origin compatible. Testing is done on Chrome using a [Cross-Origin Resource Sharing (CORS) Extension](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en-US) to make it possible for the browser to obtain content from a site that is not from the same source. 
 
 ## Steps to Run 
 1. Download the repository 
@@ -14,7 +14,7 @@ Current build is not cross-origin compatible. Testing is done on Chrome using a 
 ```
 28      myH1.textContent = jsonObj['title']['rendered'];
 ```
-
-4. Open index.html in Chrome 
-5. Enter the addresss where you want to retrieve the JSON from (e.g. https://content.mycareersfuture.sg/wp-json/wp/v2/posts/2980) 
-6. Text from the page should appear. Running details should appear on the console log. 
+4. Ensure that the CORS extension is active (the icon will be on the right of your address bar and coloured) 
+5. Open index.html in Chrome 
+6. Enter the addresss where you want to retrieve the JSON from (e.g. https://content.mycareersfuture.sg/wp-json/wp/v2/posts/2980) 
+7. Text from the page should appear. Running details should appear on the console log. 
